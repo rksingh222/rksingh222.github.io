@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: white;
+            height: 80px;
+            box-shadow: 0 4px 8px #ddd;
+        }
+
+        header .logotext {
+            padding: 15px;
+            float: left;
+            text-decoration: none;
+            font-size: 28px;
+            color: #006669;
+        }
+
+        header .logotext span {
+            color: turquoise;
+            font-size: 36px;
+        }
+
+        header ul {
+            float: right;
+            list-style: none;
+        }
+
+        header ul li {
+            float: left;
+            position: relative;
+        }
+
+        header ul li a {
+            display: block;
+            padding: 20px;
+            font-size: 20px;
+            color: #006669;
+            text-decoration: none;
+        }
+
+        header ul li a:hover {
+            color: darkgray;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        @media screen and (max-width:800px) {
+            .menu-toggle {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 30px;
+                color: #006669;
+            }
+
+            .showing {
+                max-height: 320px;
+            }
+
+            header ul {
+                position: fixed;
+                left: 0px;
+                top: 82px;
+                box-shadow: 0 4px 8px #ddd;
+                width: 100%;
+                overflow: hidden;
+                max-height: 0px;
+                transition: all 0.5s;
+                z-index: 2;
+                background: white;
+            }
+
+            header ul li {
+                width: 100%;
+            }
+
+            header ul li a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="logotext" href="">Learn<span>2</span>Code</a>
+        <i class="fa-solid fa-bars menu-toggle"></i>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Pay</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Me</a></li>
+        </ul>
+    </header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nisi molestiae recusandae veritatis fugit sequi voluptate similique quam nobis, fuga molestias illum assumenda quibusdam quis cum excepturi odit distinctio sunt ipsam nam id non officia. Architecto velit aperiam adipisci repudiandae reiciendis qui iste voluptas minima iusto totam ea, possimus consectetur quas repellat dignissimos dolorum officiis delectus sit cumque? Dicta totam itaque nam perspiciatis fuga nesciunt, quidem ab veritatis quisquam maiores in? Dolorum asperiores libero ea animi dignissimos, placeat quam commodi. Odio voluptatum consectetur iure saepe eum quasi voluptas quod dolore ut maxime reprehenderit voluptate praesentium dolor non impedit, quam officia rem, animi sapiente rerum? Animi deserunt magni quas similique iusto consectetur provident, eos maxime eum. Repellat delectus magnam temporibus quia assumenda aliquam pariatur, tempora quam suscipit doloribus cumque obcaecati a quae eum, placeat ducimus non. Ex cumque magni eum. Ad delectus sunt tempore suscipit nihil. Atque laboriosam deleniti repudiandae ducimus magni neque, veritatis ea labore quod eius. Alias, ullam quos tempore ex quae, tenetur, dolor praesentium deleniti nemo explicabo quaerat! Id earum, expedita nam beatae fuga quibusdam quam quaerat optio debitis veritatis! Quidem mollitia nemo possimus nobis porro consequatur quibusdam modi voluptates quia, aliquam repellat minus dicta. Ratione, maxime earum!</p>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('header ul').toggleClass('showing');
+            })
+        })
+    </script>
+
+</body>
+
+</html>
