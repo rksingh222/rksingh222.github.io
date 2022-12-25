@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             background: #f5f6fa;
         }
@@ -37,7 +38,7 @@
             height: 300px;
         }
 
-        .text{
+        .text {
             margin-top: 20px;
             padding-left: 10px;
             padding-right: 10px;
@@ -49,16 +50,19 @@
             padding-top: 10px;
             padding-bottom: 10px;
         }
+
         h3 {
             text-transform: uppercase;
         }
-        .image-tag{
+
+        .image-tag {
             display: flex;
             flex-direction: row;
             align-items: center;
 
         }
-        .img{
+
+        .img {
             display: block;
             width: 50px;
             height: 50px;
@@ -67,25 +71,46 @@
             margin-bottom: 10px;
             overflow: hidden;
         }
-        .logo{
+
+        .logo {
             width: 100%;
             height: 100%;
         }
-        .name{
+
+        .name {
             margin: 20px;
             vertical-align: middle;
         }
-        .myposter{
+
+        .myposter {
             width: 100%;
             height: 700px;
 
         }
-        .myimage{
+
+        .myimage {
             margin: auto;
             width: 40%;
             padding: 20px;
             margin-bottom: 40px;
             border: 1px solid #ccc;
+        }
+
+       
+        @media screen and (max-width: 600px) {
+            .videocontainer {
+                width: 100%;
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .myimage {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -96,7 +121,10 @@
             <img class="myposter" src="./myposter.jpg">
         </div>
         <div class="videocontainer">
-            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg" style="object-fit: cover;"></span><h3 class="name">Rahul Singh</h3></div>
+            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg"
+                        style="object-fit: cover;"></span>
+                <h3 class="name">Rahul Singh</h3>
+            </div>
             <iframe class="video" src="https://www.youtube.com/embed/lgTHGZF3BQw" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -107,40 +135,70 @@
             </div>
         </div>
         <div class="videocontainer">
-            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg" style="object-fit: cover;"></span><h3 class="name">Rahul Singh</h3></div>
-            <iframe class="video" src="https://www.youtube.com/embed/rzjOLgb2U1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg"
+                        style="object-fit: cover;"></span>
+                <h3 class="name">Rahul Singh</h3>
+            </div>
+            <iframe class="video" src="https://www.youtube.com/embed/rzjOLgb2U1U" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             <div class="text">
                 <h3>aa jana o aa jana</h3>
                 <h3>24 December 2022</h3>
             </div>
         </div>
         <div class="videocontainer">
-            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg" style="object-fit: cover;"></span><h3 class="name">Rahul Singh</h3></div>
-            <iframe class="video" src="https://www.youtube.com/embed/or8LyI2eneg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg"
+                        style="object-fit: cover;"></span>
+                <h3 class="name">Rahul Singh</h3>
+            </div>
+            <iframe class="video" src="https://www.youtube.com/embed/or8LyI2eneg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             <div class="text">
                 <h3>dil ke arma aasuoon mein</h3>
                 <h3>24 December 2022</h3>
             </div>
         </div>
         <div class="videocontainer">
-            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg" style="object-fit: cover;"></span><h3 class="name">Rahul Singh</h3></div>
-            <iframe class="video" src="https://www.youtube.com/embed/-WY2ZTQaB_I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg"
+                        style="object-fit: cover;"></span>
+                <h3 class="name">Rahul Singh</h3>
+            </div>
+            <iframe class="video" src="https://www.youtube.com/embed/-WY2ZTQaB_I" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             <div class="text">
                 <h3>jhumka gira re bareiley</h3>
                 <h3>24 December 2022</h3>
             </div>
         </div>
         <div class="videocontainer">
-            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg" style="object-fit: cover;"></span><h3 class="name">Rahul Singh</h3></div>
-            <iframe class="video" src="https://www.youtube.com/embed/-N-k56i7M2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg"
+                        style="object-fit: cover;"></span>
+                <h3 class="name">Rahul Singh</h3>
+            </div>
+            <iframe class="video" src="https://www.youtube.com/embed/-N-k56i7M2k" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             <div class="text">
                 <h3>maine pyaar tumhi se kiya</h3>
                 <h3>24 December 2022</h3>
             </div>
         </div>
         <div class="videocontainer">
-            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg" style="object-fit: cover;"></span><h3 class="name">Rahul Singh</h3></div>
-            <iframe class="video" src="https://www.youtube.com/embed/ehicS2NMGWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="image-tag"><span class="img"><img class="logo" src="./rahul.jpg"
+                        style="object-fit: cover;"></span>
+                <h3 class="name">Rahul Singh</h3>
+            </div>
+            <iframe class="video" src="https://www.youtube.com/embed/ehicS2NMGWA" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             <div class="text">
                 <h3>dil mein sanam ki surat</h3>
                 <h3>24 December 2022</h3>
